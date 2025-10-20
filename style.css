@@ -100,7 +100,7 @@ button:hover {
 }
 
 .product {
-  background: #f5f5f0; /* dirty white tone */
+  background: #e8e8e8; /* updated greyish-white tone */
   border-radius: 10px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   width: 200px;
@@ -116,6 +116,21 @@ button:hover {
 .product img {
   width: 100%;
   border-radius: 10px;
+}
+
+/* Footer */
+footer {
+  background: #000;
+  color: #fff;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 40px;
+}
+
+footer p {
+  margin: 5px 0;
 }
 
 /* Responsive Design */
