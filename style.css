@@ -1,0 +1,145 @@
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  margin: 0;
+  background: #fafafa;
+  color: #333;
+}
+
+/* Header */
+header {
+  background: #000;
+  color: #fff;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-section {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+/* Navigation */
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 25px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover,
+nav a:focus {
+  color: #cfcfcf;
+  text-decoration: underline;
+}
+
+/* Hero Section */
+.hero {
+  text-align: center;
+  padding: 120px 20px;
+  background: url('images/banner.jpg') center/cover no-repeat;
+  color: white;
+}
+
+.overlay {
+  background: rgba(255,255,255,0.7);
+  display: inline-block;
+  padding: 30px 40px;
+  border-radius: 15px;
+}
+
+.hero .quote {
+  font-size: 1.6rem;
+  margin-bottom: 30px;
+  font-style: italic;
+  color: black;
+  line-height: 1.6;
+}
+
+.hero .quote span {
+  display: block;
+  font-size: 1.3rem;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 5px;
+}
+
+/* Buttons */
+button {
+  background: #000;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: #444;
+}
+
+/* Products Section */
+.products {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 40px;
+}
+
+.product {
+  background: #f5f5f0; /* dirty white tone */
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  width: 200px;
+  text-align: center;
+  padding: 15px;
+  transition: transform 0.2s ease;
+}
+
+.product:hover {
+  transform: translateY(-5px);
+}
+
+.product img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .products {
+    justify-content: center;
+  }
+
+  .product {
+    width: 45%; /* 2 per row */
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media (max-width: 480px) {
+  .product {
+    width: 90%; /* 1 per row */
+  }
+
+  nav a {
+    font-size: 1rem;
+  }
+}
